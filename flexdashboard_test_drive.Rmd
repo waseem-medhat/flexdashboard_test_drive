@@ -1,0 +1,45 @@
+---
+title: "A Test Drive of Flexdashboard"
+output: flexdashboard::flex_dashboard
+---
+
+```{r load, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(GGally)
+library(plotly)
+```
+
+Basic Layout
+==============
+
+One Column {data-width=200}
+--------------
+
+### Chart A
+
+```{r}
+ggplotly(qplot(mtcars$cyl) + labs(x = ""))
+```
+
+### A Gauge!
+
+```{r}
+gauge(
+  value = round(mean(mtcars$cyl == 6) * 100),
+  min = 0, max = 100,
+  symbol = "%",
+  label = "6-cylinder cars"
+)
+```
+
+
+Another Column
+--------------
+
+### Chart B
+
+```{r}
+ggplotly(GGally::ggpairs(mtcars[,1:4]))
+```
+
