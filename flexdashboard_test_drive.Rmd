@@ -43,3 +43,37 @@ Another Column
 ggplotly(GGally::ggpairs(mtcars[,1:4]))
 ```
 
+
+Row-Based Layout {data-orientation=rows}
+==============
+
+One Row
+--------------
+
+### Wide Chart
+
+```{r}
+ggplotly(qplot(mtcars$wt))
+```
+
+Another Row
+--------------
+
+### Chart 1
+
+```{r}
+ggplotly(qplot(mtcars$wt, mtcars$mpg))
+```
+
+
+### Chart 2
+
+```{r}
+ggplotly(qplot(mtcars$wt, mtcars$disp))
+```
+ 
+### Chart 3
+
+```{r}
+ggplotly(qplot(mtcars$wt, mtcars$hp))
+```
