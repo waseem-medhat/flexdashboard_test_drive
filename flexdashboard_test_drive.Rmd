@@ -77,3 +77,52 @@ ggplotly(qplot(mtcars$wt, mtcars$disp))
 ```{r}
 ggplotly(qplot(mtcars$wt, mtcars$hp))
 ```
+
+
+Tabsets {data-navmenu='More Complex Layouts'}
+==============
+
+Single Tabset Column {.tabset}
+--------------
+
+### Tab Chart A
+
+```{r}
+ggplotly(qplot(mtcars$mpg,  geom = "dotplot"))
+```
+
+### Tab Chart B
+
+```{r}
+ggplotly(qplot(mtcars$wt,   geom = "dotplot"))
+```
+
+### Tab Chart C
+```{r}
+ggplotly(qplot(mtcars$disp, geom = "dotplot"))
+```
+
+
+Tabsets with Fade Effect {data-navmenu='More Complex Layouts'}
+==============
+
+Single Tabset Column {.tabset .tabset-fade}
+--------------
+
+### Tab Chart 1
+
+```{r}
+ggplotly(qplot(wt, mpg, data = mtcars, color = factor(cyl)))
+```
+
+### Tab Chart 2
+
+```{r}
+ggplotly(qplot(disp, mpg, data = mtcars, color = factor(cyl)))
+```
+
+### Tab Chart 3
+```{r}
+ggplotly(qplot(hp, mpg, data = mtcars, color = factor(cyl)))
+```
+
