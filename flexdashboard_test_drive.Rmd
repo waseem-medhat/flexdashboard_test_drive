@@ -11,10 +11,10 @@ library(plotly)
 ```
 
 Basic Layout
-==============
+============
 
 One Column {data-width=200}
---------------
+----------
 
 ### Chart A
 
@@ -45,10 +45,10 @@ ggplotly(GGally::ggpairs(mtcars[,1:4]))
 
 
 Row-Based Layout {data-orientation=rows}
-==============
+================
 
 One Row
---------------
+-------
 
 ### Wide Chart
 
@@ -57,7 +57,7 @@ ggplotly(qplot(mtcars$wt))
 ```
 
 Another Row
---------------
+-----------
 
 ### Chart 1
 
@@ -80,10 +80,10 @@ ggplotly(qplot(mtcars$wt, mtcars$hp))
 
 
 Tabsets {data-navmenu='More Complex Layouts'}
-==============
+=======
 
 Single Tabset Column {.tabset}
---------------
+--------------------
 
 ### Tab Chart A
 
@@ -104,10 +104,10 @@ ggplotly(qplot(mtcars$disp, geom = "dotplot"))
 
 
 Tabsets with Fade Effect {data-navmenu='More Complex Layouts'}
-==============
+========================
 
 Single Tabset Column {.tabset .tabset-fade}
---------------
+--------------------
 
 ### Tab Chart 1
 
