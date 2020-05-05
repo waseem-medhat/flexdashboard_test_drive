@@ -10,6 +10,12 @@ library(GGally)
 library(plotly)
 ```
 
+Sidebar {.sidebar}
+=======
+
+<br/>
+This is supposed to be some _text_, formatted by **Markdown** syntax.
+
 Basic Layout
 ============
 
